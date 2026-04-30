@@ -26,7 +26,7 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-document.querySelectorAll('.item').forEach(item => {
+document.querySelectorAll('.item, .featured-drink').forEach(item => {
     item.style.opacity = '0';
     item.style.transform = 'translateY(20px)';
     item.style.transition = 'opacity 0.5s, transform 0.5s';

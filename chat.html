@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Coffee Chat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Fresh Coffee</div>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#featured">Featured</a></li>
+                <li><a href="index.html#menu">Menu</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="chat-page">
+        <section class="chat-panel" aria-labelledby="chat-title">
+            <div class="chat-heading">
+                <p class="featured-label">Fresh Coffee Chat</p>
+                <h1 id="chat-title">Ask About Our Featured Drink</h1>
+            </div>
+
+            <div class="chat-window" id="chat-window" aria-live="polite">
+                <div class="chat-message bot">
+                    <p>Hi! Ask me about the Honey Cinnamon Latte, the menu, or our hours.</p>
+                </div>
+            </div>
+
+            <form class="chat-form" id="chat-form">
+                <label for="chat-input" class="sr-only">Type your message</label>
+                <input id="chat-input" type="text" placeholder="Type your question..." autocomplete="off" required>
+                <button class="btn" type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="chat.js"></script>
+</body>
+</html>
